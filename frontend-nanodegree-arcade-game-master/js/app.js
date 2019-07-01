@@ -27,9 +27,9 @@ Enemy.prototype.update = function(dt) {
 
 	// If the enemy and the player collide.
     if(this.x < player.x + 30 && this.x + 60 > player.x && this.y < player.y + 60 && this.y + 40 > player.y) {
-		score = 0;
-		document.getElementById('playerScore').innerHTML = score;
-		player.reset();
+	score = 0;
+	document.getElementById('playerScore').innerHTML = score;
+	player.reset();
     }
 };
 
@@ -50,13 +50,12 @@ var Player = function () {
 
 // Is called every time the player position is updated
 Player.prototype.update = function() {
- 	
 	// If the player reaches the water
 	if (player.y < 20) {
-	score++;
-	document.getElementById('playerScore').innerHTML = score;
-	this.reset();
-}
+		score++;
+		document.getElementById('playerScore').innerHTML = score;
+		this.reset();
+	}
 };
 
 Player.prototype.render = function() {
@@ -96,7 +95,6 @@ var enemy6 = new Enemy(-890, 230);
 var allEnemies = [enemy1, enemy2, enemy3, enemy4, enemy5, enemy6];
 // Place the player object in a variable called player
 var player = new Player();
-
 
 
 // This listens for key presses and sends the keys to your
