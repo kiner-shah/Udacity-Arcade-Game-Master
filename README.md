@@ -1,4 +1,4 @@
-# Udacity Front-end Nonodegree Project 
+# Udacity Front-end Nanodegree Project 
 ## Frogger Arcade Game
 
 ## Description
